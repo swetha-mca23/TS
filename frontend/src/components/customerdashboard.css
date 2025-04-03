@@ -1,0 +1,64 @@
+CustomerDashboard.css
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+  }
+  
+  .dashboard-card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .dashboard-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 16px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  
+  .customer-details {
+    text-align: left;
+    margin-top: 12px;
+  }
+  
+  .customer-details p {
+    font-size: 16px;
+    color: #374151;
+    margin: 4px 0;
+  }
+  
+  .customer-details strong {
+    color: #111827;
+  }
+  
+  .logout-button {
+    margin-top: 16px;
+    width: 100%;
+    background-color: #ef4444;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .logout-button:hover {
+    background-color: #dc2626;
+  }
+  

@@ -11,27 +11,15 @@ const customerRepo = AppDataSource.getRepository(Customer);
 export const register = async (req: Request, res: Response) => {
     try {
         const { name, address, email, password, phoneNo, role } = req.body;
-
-        
         const existingCustomer = await customerRepo.findOneBy({ email });
         if (existingCustomer) {
              {res.status(400).json({ error: "Email already exists" });
-         return 
-        }
-        }
+         return }};
 
         const hashedPassword = await bcrypt.hash(password, 10);
-
         const newCustomer = customerRepo.create({ 
-            name, 
-            address, 
-            email, 
-            password: hashedPassword, 
-            phoneNo, 
-            role 
+            name, address, email, password: hashedPassword, phoneNo,role 
         });
-
-       
         await customerRepo.save(newCustomer);
 
         res.status(201).json({ message: "User registered successfully" });

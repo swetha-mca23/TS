@@ -1,0 +1,65 @@
+
+.customer-list {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .customer-list h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+  }
+  
+  .customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .customer-table th, 
+  .customer-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .customer-table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-button {
+    background-color: #008CBA;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete-button {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete-button:hover {
+    background-color: darkred;
+  }
+  
+  .edit-button:hover {
+    background-color: #005f7f;
+  }
+  
